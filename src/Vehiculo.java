@@ -56,6 +56,26 @@ public class Vehiculo {
         System.out.println("Kilometraje: " + kilometraje);
         
      }
+     // Metodo para mantemiento
+     public void realizarMantenimiento(){
+        //  Mantenimiento de nivel de aceite
+          System.out.println("-Necesita cambiar del aceite del vehículo");
+
+          //  Mantenimiento de kilometraje y recomendacion
+          if (kilometraje>15000) {
+            System.out.println("-El vehiculo a recorrido más de 15,000 km, revise el estado de las llantas y realizar alineacion y balanceo si es necesario");
+            
+            
+          } else {
+            System.out.println("-El kilometraje es de "+kilometraje+" por ahora no es necesario un servicio de manteniento");
+            
+          }
+          System.out.println("-Es necesario una resivisón y reemplazo de filtros.");
+          System.out.println("-Necesita mantenimiento en el sistema de frenos. ");
+          System.out.println("-Es necesario mantenimiento en el sistema de suspensión ");
+          System.out.println("-Requiere revisión y mantenimiento de la batería, verifica la carga");
+     
+}
      
         
 }

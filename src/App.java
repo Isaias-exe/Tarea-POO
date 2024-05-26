@@ -17,7 +17,25 @@ public class App {
 
         System.out.println("Informacion del Camion");
         camion.mostrarInfo();
+        System.out.println("=========================================");
+       System.out.println("");
+    
+        
+    //   Ejecución de metodo de mantenimiento
+        
+       System.out.println(" Mantenimiento de auto: ");
+        auto.realizarMantenimiento();
+        double costoMantenimiento= auto.calcularCostoMantenimiento(0.5, 15000);
+        
+       System.out.println("El costo de mantenimiento del auto es de $ "+costoMantenimiento);
+
+        System.out.println("===========================================");
+        System.out.println("");
+        System.out.println("Mantenimiento de camión:");
+       
+        camion.realizarMantenimiento();
+        
+    }
 
         
     }
-}
