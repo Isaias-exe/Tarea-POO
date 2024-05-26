@@ -22,6 +22,15 @@ public class Auto extends VehiculoPasajeros{
         super.mostrarInfo();
         System.out.println("Tipo de Combustible: " + tipoCombustible);
     }
-    
+    public void realizarMantenimiento(){
+        super.realizarMantenimiento();
+        System.out.println("-Requiere inspección en el sistema de escape. ");
+        System.out.println("-Necesita mantenimiento en el sistema de encendido. ");
+  
+      }
+      public double calcularCostoMantenimiento(double costoporKM, int kilometroRecorrido){
+          double costoTotal=costoporKM*kilometroRecorrido;
+          return costoTotal;
+        }
     
 }
